@@ -1,10 +1,10 @@
 #!/usr/bin/zsh
 
-CC=musl-gcc
+CC=gcc
 CFLAGS= -O3 -flto -g -march=native -static -pipe
-TARGET= nrainhas
+TARGET= nqueens
 all:
-	$(CC) $(CFLAGS) NRainhas.c -o $(TARGET)
+	$(CC) $(CFLAGS) nqueens.c -o $(TARGET)
 clean:
 	rm $(TARGET)
 run:
